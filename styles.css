@@ -1,15 +1,20 @@
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(to right, hsl(342, 26%, 50%), hsl(175, 100%, 50%));
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: start;
   align-content: space-around;
-  font-family: "Trattatello, fantasy", Arial, Helvetica, sans-serif;
+  font-family: monospace, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
   white-space: nowrap;
   align-items: center;
   min-height: 100vh;
@@ -91,7 +96,8 @@ footer {
 /* Date CSS */
 
 #date {
-  background-color: red;
+  font-family:monospace;
+  font-size: 20px;
 }
 
 
@@ -99,6 +105,7 @@ footer {
 
 #notes {
   position:absolute;
+  top: 75px;
   left: 100px;
   width: 200px;
   height: 100px;
@@ -133,7 +140,7 @@ label {
 #setButton {
     position: absolute;
     left: 40%;
-    background: linear-gradient(to right, hsl(342, 26%, 50%), hsl(175, 100%, 50%));;
+    background: linear-gradient(to right, hsl(342, 26%, 50%), hsl(175, 100%, 50%));
     margin-top:10px;
     border: 1px solid black;
     border-radius: 50px;
@@ -141,7 +148,7 @@ label {
 #clearButton {
     position: absolute;
     right: 40%;
-    background:  linear-gradient(to left, hsl(342, 26%, 50%), hsl(175, 100%, 50%));;
+    background:  linear-gradient(to left, hsl(342, 26%, 50%), hsl(175, 100%, 50%));
     margin-top:10px;
     border: 1px solid black;
     border-radius: 50px;
@@ -152,19 +159,19 @@ label {
 #stopwatchtext {  
   position: relative;
   color: cyan;
-  bottom: -70px;
+  bottom: -60px;
 }
 
 #stopwatch {
   font-size: 20px;
   position:relative;
-  bottom: -70px;
+  bottom: -50px;
   left: 4%;
 }
 #buttons {
   position: absolute;
   bottom: 50px;
-  left: 41.4%;
+  left: 41.6%;
 }
 
 #buttons li {
@@ -174,6 +181,7 @@ label {
 
 button {
   border-radius: 50px;
+  background: linear-gradient(to right, hsl(342, 26%, 50%), hsl(175, 100%, 50%));
 }
 
 
@@ -187,4 +195,24 @@ button {
   100% {
       opacity: 1;
   }
+}
+
+/* Assisted w/ https://codepen.io/hylobates-lar/pen/qBbQeON */
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
