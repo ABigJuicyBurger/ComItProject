@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang ="en">
     <head>
+        <!--Flexbox assistance w/ https://loading.io/flexbox/-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale = 1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="clock1/clock1.css">
         <link rel="stylesheet" href="styles.css">
-        <script defer src ="clock1/clock.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <script defer src="clock1/clock.js"></script>
         <script defer src ="date.js"></script>
         <script defer type="text/javascript" src ="alarm.js"></script>
         <script defer src = "stopwatch.js"></script>
@@ -22,7 +24,7 @@
     
         <nav>
             <div class="title">
-            <a href="text.html">StudyTime</a>
+            <a href="StudyTime.html">StudyTime</a>
             </div>
             <div class="links">
             <a href="#">About Us</a>
@@ -31,16 +33,16 @@
             </div>
         </nav>
 
-        <textarea id ="notes" placeholder="Important notes: Write Here!" style="width: 200px; height: 100px"></textarea>
+        <textarea id ="notes" placeholder="Important notes: Write Here!"></textarea>
 
         <!--Date Setup-->
         <p id = "date"></p>
 
         <!--Clock Setup-->
         <div class = "clock">
-            <div class="hand hour" data-hour hand id = "chr"></div>
-            <div class="hand minute" data-hour minute id = "cmin"></div>
-            <div class="hand second" data-hour second id = "csec"></div>
+            <div class="hand hour" data-hour-hand id = "chr"></div>
+            <div class="hand minute" data-minute-hand id = "cmin"></div>
+            <div class="hand second" data-second-hand id = "csec"></div>
             <div class="number number1">1</div>
             <div class="number number2">2</div>
             <div class="number number3">3</div>
@@ -95,7 +97,7 @@
             </div>
         </div>
 
-        <h3>Panic Stopwatch!</h3>
+        <h3 id= "stopwatchtext">Panic Stopwatch!</h3>
         <div class="main">
             <div id="stopwatch"> 00:00:00 </div>
 
@@ -105,7 +107,6 @@
 
                 <li><button onClick="resetTimer()">Reset</button></li>
             </ul>
-            <!--<p><iframe src="http://free.timeanddate.com/cllock/i7pw0p4b/n55/szw110/szh110/cf100/hnce1ead6" frameborder="0" with="110" height="110"></iframe></p>-->
         </div>
 
         <footer>ComIT Project 2021</footer>
