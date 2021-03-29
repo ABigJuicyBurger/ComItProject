@@ -1,0 +1,117 @@
+<!DOCTYPE html> <!--God knows how this looks on mobile...access by laptop for the beauty!-->
+<html lang ="en">
+    <head>
+        <!--Flexbox assistance w/ https://loading.io/flexbox/-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="clock1/clock1.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <script defer src="clock1/clock.js"></script>
+        <script defer src ="date.js"></script>
+        <script defer type="text/javascript" src ="alarm.js"></script>
+        <script defer src = "stopwatch.js"></script>
+        <script defer src = "digitalclock.js"></script>
+        <title>StudyTime</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+    </head>
+
+
+    <body> <!--NotePad Launch-->
+    
+        <nav>
+            <div class="title">
+            <a href="StudyTime.html">StudyTime</a>
+            </div>
+            <div class="links">
+            <a href="#">About Us</a>
+            <a href="https://www.linkedin.com/in/badermuhssin/">Contact</a>
+            <a href="#">Careers</a>
+            </div>
+        </nav>
+
+        <textarea id ="notes" placeholder="Important notes: Write Here!"></textarea>
+
+        <!--Date Setup-->
+        <p id = "date"></p>
+
+        <!--Clock Setup-->
+        <div class = "clock">
+            <div class="hand hour" data-hour-hand id = "chr"></div>
+            <div class="hand minute" data-minute-hand id = "cmin"></div>
+            <div class="hand second" data-second-hand id = "csec"></div>
+            <div class="number number1">1</div>
+            <div class="number number2">2</div>
+            <div class="number number3">3</div>
+            <div class="number number4">4</div>
+            <div class="number number5">5</div>
+            <div class="number number6">6</div>
+            <div class="number number7">7</div>
+            <div class="number number8">8</div>
+            <div class="number number9">9</div>
+            <div class="number number10">10</div>
+            <div class="number number11">11</div>
+            <div class="number number12">12</div>
+        </div>
+        
+
+        <h2 id="digitalclock"></h2>
+
+        <!--Alarm Setup-->
+        <div id="alarm-container">
+        <h1 class="header">Panic Alarm!</h1>
+            <label>
+                <div>
+                <select id="alarmhrs"></select>
+                </div>
+            </label>
+            <label>
+                <div>
+                <select id="alarmmins"></select>
+                </div>
+            </label>
+            <label>
+                <div>
+                <select id="alarmsecs"></select>
+                </div>
+            </label>
+            <label>
+                <div>
+                <select id="ampm">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+                </div>
+            </label>
+        </div>
+
+        <div id="buttonHolder">
+            <div>
+                <button id="setButton" onClick="alarmSet()">Set Alarm</button>
+            </div>
+
+            <div>
+                <button id="clearButton" onClick="alarmClear()">Clear Alarm</button>
+            </div>
+        </div>
+
+        <h3 id= "stopwatchtext">Panic Stopwatch!</h3>
+        <div class="main">
+            <div id="stopwatch"> 00:00:00 </div>
+
+            <ul id="buttons">
+                <li><button onClick="startTimer()">Start</button></li>
+                <li><button onClick="stopTimer()">Stop</button></li>
+
+                <li><button onClick="resetTimer()">Reset</button></li>
+            </ul>
+        </div>
+
+        <footer>ComIT Project 2021</footer>
+
+    </body>
+</html>
