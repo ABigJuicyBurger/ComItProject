@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   justify-content: start;
   align-content: space-around;
-  font-family: monospace, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: monospace, 'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
   white-space: nowrap;
   align-items: center;
   min-height: 100vh;
@@ -27,6 +27,7 @@ body {
 .title {
   position: absolute;
   left: 47.5%;
+  z-index:1;
 }
 
 nav {
@@ -142,7 +143,6 @@ label {
     left: 40%;
     background: linear-gradient(to right, hsl(342, 26%, 50%), hsl(175, 100%, 50%));
     margin-top:10px;
-    border: 1px solid black;
     border-radius: 50px;
 }
 #clearButton {
@@ -150,7 +150,6 @@ label {
     right: 40%;
     background:  linear-gradient(to left, hsl(342, 26%, 50%), hsl(175, 100%, 50%));
     margin-top:10px;
-    border: 1px solid black;
     border-radius: 50px;
 }
 

@@ -1,39 +1,3 @@
-<!DOCTYPE html> <!--God knows how this looks on mobile...access by laptop for the beauty!-->
-<html lang ="en">
-    <head>
-        <!--Flexbox assistance w/ https://loading.io/flexbox/-->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="clock1/clock1.css">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-        <script defer src="clock1/clock.js"></script>
-        <script defer src ="date.js"></script>
-        <script defer type="text/javascript" src ="alarm.js"></script>
-        <script defer src = "stopwatch.js"></script>
-        <script defer src = "digitalclock.js"></script>
-        <title>StudyTime</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-        <link rel="manifest" href="favicon/site.webmanifest">
-    </head>
-
-
-    <body> <!--NotePad Launch-->
-    
-        <nav>
-            <div class="title">
-            <a href="StudyTime.html">StudyTime</a>
-            </div>
-            <div class="links">
-            <a href="#">About Us</a>
-            <a href="https://www.linkedin.com/in/badermuhssin/">Contact</a>
-            <a href="#">Careers</a>
-            </div>
-        </nav>
-
         <textarea id ="notes" placeholder="Important notes: Write Here!"></textarea>
 
         <!--Date Setup-->
@@ -99,6 +63,8 @@
             </div>
         </div>
 
+        <!--Stopwatch Setup-->
+
         <h3 id= "stopwatchtext">Panic Stopwatch!</h3>
         <div class="main">
             <div id="stopwatch"> 00:00:00 </div>
@@ -110,8 +76,3 @@
                 <li><button onClick="resetTimer()">Reset</button></li>
             </ul>
         </div>
-
-        <footer>ComIT Project 2021</footer>
-
-    </body>
-</html>

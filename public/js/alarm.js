@@ -28,7 +28,7 @@ hours = hours;
 }
 
 
-h2.textContent = addZero(hours) + ":" + addZero(minutes) + ":" + addZero(seconds) + "" + ampm;
+
 
 },1000);
 
@@ -134,7 +134,7 @@ hours = 12;
 hours = hours;
 }
 
-var currentTime = h2.textContent = addZero(hours) + ":" + addZero(minutes) + ":" + addZero(seconds) + "" + ampm;
+var currentTime = addZero(hours) + ":" + addZero(minutes) + ":" + addZero(seconds) + "" + ampm;
 
 
 if (alarmTime == currentTime) {
